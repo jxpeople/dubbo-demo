@@ -1,5 +1,25 @@
 server:
   port: 8081
 
+spring:
+  application:
+    name: dubbo-provider
 
+
+merge:
+  enabled: true
+  guavaCacheNumMaxSize: 1000
+  guavaCacheRefreshWriteTime: 10 # min
+  guavaCacheRefreshThreadPoolSize: 10
+  aop: # 启动注解的方式,自动聚合
+    enabled: true
+
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    address: zookeeper://127.0.0.1:2181 # 注册中心地址
+  protocol:
+    port: -1 # 随机端口号，我们等会会通过不同端口起2台Provider,所以使用随机端口
+    name: dubbo
 
