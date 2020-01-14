@@ -1,4 +1,4 @@
-package com.shuqi.dubbo.consumer;
+package com.jay.dubbo.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,4 +14,5 @@ public class ApplicationMain {
         SpringApplication.run(ApplicationMain.class, args);
         System.out.println(new SimpleDateFormat("[yyyy-MM-dd HH:mm:ss]").format(new Date()) + " Dubbo service server started!");
     }
+
 }

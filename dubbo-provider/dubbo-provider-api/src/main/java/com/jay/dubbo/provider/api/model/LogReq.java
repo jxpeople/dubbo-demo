@@ -1,4 +1,4 @@
-package com.shuqi.dubbo.provider.api.model;
+package com.jay.dubbo.provider.api.model;
 
 import lombok.Data;
 

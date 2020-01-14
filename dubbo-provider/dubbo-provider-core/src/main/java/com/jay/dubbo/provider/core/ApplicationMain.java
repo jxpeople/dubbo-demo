@@ -1,4 +1,4 @@
-package com.shuqi.dubbo.provider.core;
+package com.jay.dubbo.provider.core;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

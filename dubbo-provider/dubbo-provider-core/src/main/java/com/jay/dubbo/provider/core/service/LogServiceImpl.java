@@ -1,8 +1,8 @@
-package com.shuqi.dubbo.provider.core.service;
+package com.jay.dubbo.provider.core.service;
 
 
-import com.shuqi.dubbo.provider.api.model.LogReq;
-import com.shuqi.dubbo.provider.api.service.LogService;
+import com.jay.dubbo.provider.api.model.LogReq;
+import com.jay.dubbo.provider.api.service.LogService;
 import org.springframework.stereotype.Service;
 
 

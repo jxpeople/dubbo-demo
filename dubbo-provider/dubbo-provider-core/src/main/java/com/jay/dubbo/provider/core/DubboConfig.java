@@ -1,8 +1,8 @@
-package com.shuqi.dubbo.provider.core;
+package com.jay.dubbo.provider.core;
 
 import com.alibaba.dubbo.config.*;
 import com.alibaba.dubbo.config.spring.ServiceBean;
-import com.shuqi.dubbo.provider.api.service.LogService;
+import com.jay.dubbo.provider.api.service.LogService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
