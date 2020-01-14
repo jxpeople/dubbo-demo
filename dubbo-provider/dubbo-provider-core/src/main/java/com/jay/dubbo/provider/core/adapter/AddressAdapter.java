@@ -14,5 +14,5 @@ public interface AddressAdapter {
     AddressDto getAddress(String cittyCode);
 
 
-    Map<String,String> getAddressByCode(List<String> cityCodeList);
+    Map<String,AddressDto> getAddressByCode(List<String> cityCodeList);
 }

@@ -28,16 +28,20 @@ public class AddressAdapterImpl implements AddressAdapter{
 
 
     @Override
-    public Map<String,String> getAddressByCode(List<String> cityCodeList) {
+    public Map<String,AddressDto> getAddressByCode(List<String> cityCodeList) {
 
-        Map<String,String> result = Maps.newHashMap();
+        Map<String,AddressDto> result = Maps.newHashMap();
 
         for(String cityCode : cityCodeList) {
             AddressDto addressDto = new AddressDto();
-            addressDto.setAddress("杭州");
-            addressDto.setCityCode("1000");
+            addressDto.setAddress("杭州"+cityCode);
+            addressDto.setCityCode(cityCode);
 
-            result.put(cityCode, "杭州"+cityCode);
+            int age = Integer.valueOf(cityCode);
+            addressDto.setAge(age);
+            addressDto.setAgeStr(age+"老了");
+
+            result.put(cityCode, addressDto);
         }
         return result;
     }

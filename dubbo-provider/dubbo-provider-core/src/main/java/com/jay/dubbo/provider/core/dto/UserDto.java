@@ -21,11 +21,11 @@ public class UserDto {
     // 需要聚合的属性
     private String sex;
     // 需要聚合的属性
-    @MergeField(feign = AddressAdapter.class,key = "cityCode",target = "address",method = "getAddressByCode",methodType = List.class,isValueNeedMerge = true)
+    @MergeField(feign = AddressAdapter.class,key = "cityCode",target = "address",method = "getAddressByCode",methodType = List.class,isValueNeedMerge = true,targetClass = AddressDto.class)
     private String cityCode;
     private String address;
 
-    @MergeField(feign = AddressAdapter.class,key = "age",target = "ageStr",method = "getAddressByCode",methodType = List.class)
+    @MergeField(feign = AddressAdapter.class,key = "age",target = "ageStr",method = "getAddressByCode",methodType = List.class,targetClass = AddressDto.class)
     private Integer age;
     private String ageStr;
 

@@ -12,4 +12,8 @@ public class AddressDto {
 
     private String cityCode;
 
+
+    private Integer age;
+    private String ageStr;
+
 }
