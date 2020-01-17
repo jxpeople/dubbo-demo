@@ -26,7 +26,7 @@ public class UserApiImpl implements UserApi {
     }
 
     @Override
-    public List<UserTo> getUser1(){
-        return UserDto.convert2ToList(userService.getUser1());
+    public UserTo getUser1(){
+        return UserDto.convert2To(userService.getUser1());
     }
 }

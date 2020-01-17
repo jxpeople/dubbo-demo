@@ -18,6 +18,6 @@ public interface UserApi {
      * 获取用户
      * @return
      */
-    List<UserTo> getUser1();
+    UserTo getUser1();
 
 }

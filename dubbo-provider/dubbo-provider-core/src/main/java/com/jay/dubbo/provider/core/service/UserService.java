@@ -18,5 +18,5 @@ public interface UserService {
      * 自定义解析器
      * @return
      */
-    List<UserDto> getUser1();
+    UserDto getUser1();
 }

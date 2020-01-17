@@ -42,7 +42,7 @@ public class TestController {
 
     @RequestMapping("/getuser1.json")
     public String getuser1(){
-        List<UserTo> userTo = userService.getUser1();
+        UserTo userTo = userService.getUser1();
         return JSON.toJSONString( userTo);
     }
 }

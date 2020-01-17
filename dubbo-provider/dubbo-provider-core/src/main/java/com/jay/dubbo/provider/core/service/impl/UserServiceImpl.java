@@ -45,8 +45,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @MergeResult(resultParser = UserMergeResultParser.class)
-    public List<UserDto> getUser1(){
-        List<UserDto> result = Lists.newArrayList();
+    public UserDto getUser1(){
         UserDto userDto = new UserDto();
         userDto.setName("cyj");
         userDto.setAge(33);
@@ -54,17 +53,7 @@ public class UserServiceImpl implements UserService {
         userDto.setSex("M");
         userDto.setVersion(i++);
 
-
-        UserDto userDto1 = new UserDto();
-        userDto1.setName("yxq");
-        userDto1.setAge(32);
-        userDto1.setCityCode("1001");
-        userDto1.setSex("FM");
-        userDto1.setVersion(i++);
-
-        result.add(userDto);
-        result.add(userDto1);
-        return result;
+        return userDto;
     }
 
 }
